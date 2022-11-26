@@ -1,0 +1,194 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;700;900&display=swap');
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #E5E5E5;
+    font-family: 'Roboto', sans-serif;
+}
+
+input{
+    padding: 0;
+    margin: 0;
+
+}
+label {
+    padding: 0;
+    margin: 0;
+}
+article{
+    padding: 0;
+    margin: 0.71rem 0;
+    display: flex;
+}
+.form__wrapper{
+    max-width: 400px;
+    margin: 0 auto;
+    background: #fff;
+    border-radius: 6px;
+    overflow: hidden;
+    box-shadow: -10px 10px 15px rgba(0, 0, 0, 0.085);
+}
+
+
+.h1_form__header{
+    text-align: center;
+    padding: 1rem;
+    margin: 0;
+    font-size: 2rem;
+    font-weight: 800;
+    background: rgba(128, 128, 128, 0.5);
+}
+
+.form{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 0;
+}
+
+
+.form__cities{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+
+}
+
+.form__cities section{
+    position: relative;
+    flex-grow: 1;
+    text-align: center;
+    font-size: 1rem;
+    text-transform: uppercase;
+    padding:1.2rem ;
+    margin: 0;  
+}
+.form__cities section:first-child {background-color: #ccc;}
+.form__cities section:last-child {background-color: rgba(204, 204, 204, 0.53);}
+.form__cities section h2 {margin: 0; padding:0;}
+.form__cities section p {position: absolute; font-size:.8rem; top: 1.2rem; margin: 1.7rem 0 0 0 ; padding: 0 .8rem ; color:rgba(0, 0, 0, 0.537);}
+
+
+.form__input{
+    display: grid;
+    width: 100%;
+    padding: 1rem;
+    font-size:12px ;
+    grid-template-areas:
+        "firstklass firstklass secondklass secondklass"
+        "tickets tickets title title"
+        "firstname firstname firstname firstname"
+        "lastname lastname lastname lastname"
+        "agreement agreement agreement agreement"
+        "button button button button"
+    ;
+}
+
+.form__firstklass{grid-area: firstklass;}
+.form__secondklass{grid-area: secondklass;}
+.form__tickets{grid-area: tickets;}
+.form__title{grid-area: title;}
+.form__firstName{grid-area: firstname;}
+.form__lastName{grid-area: lastname;}
+.form__firstName{grid-area: firstname;}
+.form__agreement{grid-area: agreement;}
+.form__button{grid-area: button;}
+
+
+.form__firstklass, .form__secondklass{
+    margin: .71rem 0;
+    color: rgb(92, 92, 92);
+    padding: .5rem;
+    accent-color: #000;
+
+}
+.form__klass__label{
+    margin-left: .4rem;
+}
+.form__tickets, .form__title,.form__firstName,.form__lastName{
+    flex-direction: column;
+}
+.form__tickets{
+    padding: 0 .71rem 0 0;
+}
+select{
+    appearance: none;
+    
+}
+.selectmenu{
+    margin: 0;
+    position: relative;
+    border: 0;
+    
+
+}
+
+.selectmenu__arrow{
+
+    position: absolute;
+    width: 25px;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    border: 0;
+}
+.selectmenu__arrow::before, 
+.selectmenu__arrow::after{
+    --size:.4rem;
+    content: "";
+    position: absolute;
+    left: 50%;
+    transform:translate(-50% , 0);
+    width:0 ;
+    height: 0;
+}
+
+.selectmenu__arrow::before{
+    top: 55%;
+   border-top: var(--size) solid rgb(0, 0, 0);
+   border-left: var(--size) solid transparent;
+   border-right: var(--size) solid transparent;
+}
+
+.selectmenu__arrow::after{
+    top: 35%;
+    border-bottom: var(--size) solid rgb(11, 11, 11);
+    border-left: var(--size) solid transparent;
+    border-right: var(--size) solid transparent;
+ }
+
+.form__title{
+    padding: 0 0 0 .71rem;
+}
+.form__tickets__select, .form__title__select,.form__firstName__input,.form__lastName__input{
+  
+    width: 100%;
+    padding: .71rem;
+    font-size: 1.1rem;
+    border-radius: 0.25rem;
+    border: 1px solid #000;
+}
+
+.form__button{
+    appearance: none;
+    outline: none;
+    background-color: #000;
+    color: #fff;
+    padding: 1.5rem;
+    border-radius:.25rem;
+    text-align: center;
+    font-size: large;
+    font-weight: 600;
+}
+.form__agreement > input{
+    margin-right: .4rem;
+    accent-color: black;
+    
+}
+.form__button:hover{
+    background-color: rgba(0, 0, 0, 0.676);
+}

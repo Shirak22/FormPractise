@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ÅKA TÅG</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+     <section class="form__wrapper">
+        <h1 class="h1_form__header">ÅKA TÅG</h1>
+        <form action="" class="form">
+            <section class="form__cities">
+                <section> <h2>Stockholm</h2> <p>10:30</p></section>
+                <section> <h2>Göteborg</h2> <p>14:30</p></section>   
+            </section>
+            <section class="form__input">
+                
+                    <article class="form__firstklass">
+                        <input name="klass" id="radio_firstKlass" type="radio" class="form__klass__radio">
+                        <label for="radio_firstKlass" class="form__klass__label">1:a klass</label>
+                    </article>
+                    <article class="form__secondklass">
+                        
+                        <input  name="klass" id="radio_secondKlass" type="radio" class="form__klass__radio">
+                        <label  for="radio_secondKlass" class="form__klass__label">2:a klass</label>
+                    </article>
+                    <article class="form__tickets">
+                        <label for="num_tickets" class="form__tickets__label">Antal biljetter</label>
+                        <div class="selectmenu">
+                            <select name="tickets" id="num_tickets" class="form__tickets__select">
+                                <option value="1">1</option>
+                                <option value="1">2</option>
+                                <option value="1">3</option>
+                            </select>
+                            <span class="selectmenu__arrow"></span>
+                        </div>
+                      
+                    </article>
+                    <article class="form__title">
+                        <label for="title" class="form__title__label">Title</label>
+                        <div class="selectmenu">
+                            <select name="tickets" id="title" class="form__title__select">
+                                <option value="1">Mr.</option>
+                                <option value="1" selected>Ms.</option>
+                            </select>
+                            <span class="selectmenu__arrow"></span>
+                        </div>
+                     
+                    </article>
+                    <article class="form__firstName">
+                        <label  for="firstname" class="form__firstName__label"> Förnamn</label>
+                        <input type="text" id="firstname" value="Greta" class="form__firstName__input">
+                    </article>
+                    <article class="form__lastName" >
+                        <label  for="lastname" class="form__firstName__label"> Efternamn</label>
+                        <input type="text" id="lastname" value="Thunberg" class="form__firstName__input">
+                    </article>
+                    <article class="form__agreement">
+                        <input type="checkbox" id="agree" checked="true">
+                        <label  for="agree" > Godkänner villkoren</label>
+                    </article>
+                    <button class="form__button">Boka biljetter</button>
+            </section>
+
+
+
+
+
+
+        </form>
+
+     </section>   
+</body>
+</html>
